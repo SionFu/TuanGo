@@ -30,7 +30,7 @@
     headView.frame = CGRectMake(0, 64, self.view.frame.size.width, 50);
     [self.view addSubview:headView];
     //设置父类tableView的y值
-    self.tableView.y = 50;
+    self.tableView.y = 40;
 }
 
 

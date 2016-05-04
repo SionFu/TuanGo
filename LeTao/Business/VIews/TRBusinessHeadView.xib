@@ -9,18 +9,18 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TRBusinessHeadView">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+            <rect key="frame" x="0.0" y="0.0" width="600" height="40"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9pI-RZ-Njk">
-                    <rect key="frame" x="0.0" y="0.0" width="198" height="50"/>
+                    <rect key="frame" x="0.0" y="0.0" width="198" height="40"/>
                     <animations/>
                     <state key="normal" title="全部分类">
                         <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kfm-CE-zCj">
-                    <rect key="frame" x="201" y="3" width="1" height="42"/>
+                    <rect key="frame" x="201" y="3" width="1" height="32"/>
                     <animations/>
                     <color key="backgroundColor" red="0.69232772435897438" green="0.69232772435897438" blue="0.69232772435897438" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
@@ -28,21 +28,21 @@
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYQ-9C-6MO">
-                    <rect key="frame" x="402" y="0.0" width="198" height="45"/>
+                    <rect key="frame" x="402" y="0.0" width="198" height="35"/>
                     <animations/>
                     <state key="normal" title="全部排序">
                         <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGL-PN-cY8">
-                    <rect key="frame" x="205" y="0.0" width="190" height="50"/>
+                    <rect key="frame" x="205" y="0.0" width="190" height="40"/>
                     <animations/>
                     <state key="normal" title="全部区域">
                         <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jBU-t4-5Sh">
-                    <rect key="frame" x="398" y="3" width="1" height="44"/>
+                    <rect key="frame" x="398" y="3" width="1" height="34"/>
                     <animations/>
                     <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>

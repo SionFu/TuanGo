@@ -104,6 +104,7 @@
 		854974131CD9E5C600049669 /* MoreData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 854974081CD9E5C600049669 /* MoreData.plist */; };
 		854974141CD9E5C600049669 /* PortalSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 854974091CD9E5C600049669 /* PortalSettings.plist */; };
 		854974151CD9E5C600049669 /* sorts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8549740A1CD9E5C600049669 /* sorts.plist */; };
+		854974181CD9E6CE00049669 /* TRSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 854974171CD9E6CE00049669 /* TRSort.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -281,6 +282,8 @@
 		854974081CD9E5C600049669 /* MoreData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MoreData.plist; sourceTree = "<group>"; };
 		854974091CD9E5C600049669 /* PortalSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = PortalSettings.plist; sourceTree = "<group>"; };
 		8549740A1CD9E5C600049669 /* sorts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sorts.plist; sourceTree = "<group>"; };
+		854974161CD9E6CE00049669 /* TRSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRSort.h; sourceTree = "<group>"; };
+		854974171CD9E6CE00049669 /* TRSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSort.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -360,6 +363,8 @@
 		851B64D31CD87E4000DA40BA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				854974161CD9E6CE00049669 /* TRSort.h */,
+				854974171CD9E6CE00049669 /* TRSort.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -918,6 +923,7 @@
 				854973C01CD9A1D600049669 /* UIColor+FlatUI.m in Sources */,
 				851B65131CD89F6F00DA40BA /* TRDetailViewController.m in Sources */,
 				854973E91CD9A1D600049669 /* SDWebImageCompat.m in Sources */,
+				854974181CD9E6CE00049669 /* TRSort.m in Sources */,
 				851B64BC1CD877C200DA40BA /* main.m in Sources */,
 				854973B91CD9A1D600049669 /* FUICellBackgroundView.m in Sources */,
 				854973DA1CD9A1D600049669 /* MJRefreshAutoStateFooter.m in Sources */,
