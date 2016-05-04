@@ -9,5 +9,17 @@
 #import <UIKit/UIKit.h>
 
 @interface TRBusinessHeadView : UIView
+/**
+ *  全部分类
+ */
+@property (weak, nonatomic) IBOutlet UIButton *categoryButton;
+/**
+ *  全部区域
+ */
+@property (weak, nonatomic) IBOutlet UIButton *regionButton;
+/**
+ *  全部排序
+ */
+@property (weak, nonatomic) IBOutlet UIButton *sortButton;
 
 @end

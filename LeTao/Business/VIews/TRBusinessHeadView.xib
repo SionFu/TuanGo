@@ -6,28 +6,79 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TRBusinessHeadView"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TRBusinessHeadView">
             <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9pI-RZ-Njk">
-                    <rect key="frame" x="0.0" y="0.0" width="125" height="50"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9pI-RZ-Njk">
+                    <rect key="frame" x="0.0" y="0.0" width="198" height="50"/>
                     <animations/>
-                    <state key="normal" title="全部分类"/>
+                    <state key="normal" title="全部分类">
+                        <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kfm-CE-zCj">
+                    <rect key="frame" x="201" y="3" width="1" height="42"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.69232772435897438" green="0.69232772435897438" blue="0.69232772435897438" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="ukR-5w-igi"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYQ-9C-6MO">
+                    <rect key="frame" x="402" y="0.0" width="198" height="45"/>
+                    <animations/>
+                    <state key="normal" title="全部排序">
+                        <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGL-PN-cY8">
+                    <rect key="frame" x="205" y="0.0" width="190" height="50"/>
+                    <animations/>
+                    <state key="normal" title="全部区域">
+                        <color key="titleColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jBU-t4-5Sh">
+                    <rect key="frame" x="398" y="3" width="1" height="44"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="Dtg-8Q-OFx"/>
+                    </constraints>
+                </view>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="bGL-PN-cY8" secondAttribute="bottom" id="1so-2Y-WzS"/>
+                <constraint firstItem="YYQ-9C-6MO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="29H-5X-wzw"/>
+                <constraint firstItem="jBU-t4-5Sh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="3" id="3pO-s7-sGf"/>
+                <constraint firstItem="YYQ-9C-6MO" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.33" id="975-aY-fDu"/>
+                <constraint firstItem="jBU-t4-5Sh" firstAttribute="leading" secondItem="bGL-PN-cY8" secondAttribute="trailing" constant="3" id="AXN-2w-nJG"/>
+                <constraint firstAttribute="trailing" secondItem="YYQ-9C-6MO" secondAttribute="trailing" id="IZ5-rh-59f"/>
                 <constraint firstItem="9pI-RZ-Njk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MhI-hG-Gvr"/>
                 <constraint firstItem="9pI-RZ-Njk" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.33" id="Tfl-1m-Cmh"/>
+                <constraint firstItem="bGL-PN-cY8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="caN-xX-NVi"/>
+                <constraint firstItem="kfm-CE-zCj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="3" id="f3u-MX-Nin"/>
+                <constraint firstAttribute="bottom" secondItem="kfm-CE-zCj" secondAttribute="bottom" constant="5" id="fYF-jA-0Sz"/>
+                <constraint firstItem="YYQ-9C-6MO" firstAttribute="leading" secondItem="jBU-t4-5Sh" secondAttribute="trailing" constant="3" id="gWc-x9-Dlm"/>
+                <constraint firstAttribute="bottom" secondItem="YYQ-9C-6MO" secondAttribute="bottom" constant="5" id="ilg-Kh-fi2"/>
                 <constraint firstItem="9pI-RZ-Njk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="puD-0t-ZaM"/>
+                <constraint firstItem="kfm-CE-zCj" firstAttribute="leading" secondItem="9pI-RZ-Njk" secondAttribute="trailing" constant="3" id="qbE-Wn-LR1"/>
+                <constraint firstAttribute="bottom" secondItem="jBU-t4-5Sh" secondAttribute="bottom" constant="3" id="uAm-kD-vIt"/>
                 <constraint firstItem="9pI-RZ-Njk" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="ycC-nm-yuT"/>
+                <constraint firstItem="bGL-PN-cY8" firstAttribute="leading" secondItem="kfm-CE-zCj" secondAttribute="trailing" constant="3" id="yqV-Ub-Vyj"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="categoryButton" destination="9pI-RZ-Njk" id="GmV-UW-yyQ"/>
+                <outlet property="regionButton" destination="bGL-PN-cY8" id="5PX-qn-phg"/>
+                <outlet property="sortButton" destination="YYQ-9C-6MO" id="1jh-2c-xif"/>
+            </connections>
             <point key="canvasLocation" x="535" y="152"/>
         </view>
     </objects>

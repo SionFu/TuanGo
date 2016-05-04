@@ -7,7 +7,8 @@
 //
 
 #import "TRBusinessViewController.h"
-
+#import "TRBusinessHeadView.h"
+#import "UIView+Extension.h"
 @interface TRBusinessViewController ()
 
 @end
@@ -16,8 +17,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    //创建/添加头视图
+    [self setUpHeaderView];
 }
+
+#pragma mark --和界面相关
+- (void)setUpHeaderView{
+    //创建
+    //直接添加nib视图 返回多个视图
+    TRBusinessHeadView *headView = [[[NSBundle mainBundle]loadNibNamed:@"TRBusinessHeadView" owner:nil options:nil]firstObject];
+    //设置frame   添加
+    headView.frame = CGRectMake(0, 64, self.view.frame.size.width, 50);
+    [self.view addSubview:headView];
+    //设置父类tableView的y值
+    self.tableView.y = 50;
+}
+
+
+
 #pragma mark -- 设置商家的请求的参数
 - (void)settingRequestparams:(NSMutableDictionary *)params{
     //设置界面上的分类 区域 排序 城市

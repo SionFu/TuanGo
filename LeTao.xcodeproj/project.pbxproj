@@ -92,6 +92,18 @@
 		854973F51CD9A1D600049669 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 854973B61CD9A1D600049669 /* UIView+WebCacheOperation.m */; };
 		854973F81CD9D25900049669 /* TRBusinessHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 854973F71CD9D25900049669 /* TRBusinessHeadView.m */; };
 		854973FA1CD9D26E00049669 /* TRBusinessHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 854973F91CD9D26E00049669 /* TRBusinessHeadView.xib */; };
+		854973FD1CD9D86300049669 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 854973FC1CD9D86300049669 /* UIView+Extension.m */; };
+		8549740B1CD9E5C600049669 /* categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 854974001CD9E5C600049669 /* categories.plist */; };
+		8549740C1CD9E5C600049669 /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 854974011CD9E5C600049669 /* cities.plist */; };
+		8549740D1CD9E5C600049669 /* city.plist in Resources */ = {isa = PBXBuildFile; fileRef = 854974021CD9E5C600049669 /* city.plist */; };
+		8549740E1CD9E5C600049669 /* citydata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 854974031CD9E5C600049669 /* citydata.plist */; };
+		8549740F1CD9E5C600049669 /* citydict.plist in Resources */ = {isa = PBXBuildFile; fileRef = 854974041CD9E5C600049669 /* citydict.plist */; };
+		854974101CD9E5C600049669 /* cityGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = 854974051CD9E5C600049669 /* cityGroups.plist */; };
+		854974111CD9E5C600049669 /* menuData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 854974061CD9E5C600049669 /* menuData.plist */; };
+		854974121CD9E5C600049669 /* MineInformationData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 854974071CD9E5C600049669 /* MineInformationData.plist */; };
+		854974131CD9E5C600049669 /* MoreData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 854974081CD9E5C600049669 /* MoreData.plist */; };
+		854974141CD9E5C600049669 /* PortalSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 854974091CD9E5C600049669 /* PortalSettings.plist */; };
+		854974151CD9E5C600049669 /* sorts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8549740A1CD9E5C600049669 /* sorts.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -256,6 +268,19 @@
 		854973F61CD9D25900049669 /* TRBusinessHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRBusinessHeadView.h; sourceTree = "<group>"; };
 		854973F71CD9D25900049669 /* TRBusinessHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRBusinessHeadView.m; sourceTree = "<group>"; };
 		854973F91CD9D26E00049669 /* TRBusinessHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRBusinessHeadView.xib; sourceTree = "<group>"; };
+		854973FB1CD9D86300049669 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		854973FC1CD9D86300049669 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		854974001CD9E5C600049669 /* categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = categories.plist; sourceTree = "<group>"; };
+		854974011CD9E5C600049669 /* cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
+		854974021CD9E5C600049669 /* city.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = city.plist; sourceTree = "<group>"; };
+		854974031CD9E5C600049669 /* citydata.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = citydata.plist; sourceTree = "<group>"; };
+		854974041CD9E5C600049669 /* citydict.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = citydict.plist; sourceTree = "<group>"; };
+		854974051CD9E5C600049669 /* cityGroups.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cityGroups.plist; sourceTree = "<group>"; };
+		854974061CD9E5C600049669 /* menuData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = menuData.plist; sourceTree = "<group>"; };
+		854974071CD9E5C600049669 /* MineInformationData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MineInformationData.plist; sourceTree = "<group>"; };
+		854974081CD9E5C600049669 /* MoreData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MoreData.plist; sourceTree = "<group>"; };
+		854974091CD9E5C600049669 /* PortalSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = PortalSettings.plist; sourceTree = "<group>"; };
+		8549740A1CD9E5C600049669 /* sorts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sorts.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -293,6 +318,7 @@
 				851B64D91CD87E4000DA40BA /* libs */,
 				851B64DA1CD87E4000DA40BA /* Me */,
 				851B64DE1CD87E4000DA40BA /* Utilities */,
+				854973FE1CD9E5C600049669 /* Resources */,
 				851B64BD1CD877C200DA40BA /* AppDelegate.h */,
 				851B64BE1CD877C200DA40BA /* AppDelegate.m */,
 				851B65001CD8927E00DA40BA /* Main.storyboard */,
@@ -444,6 +470,8 @@
 		851B64DF1CD87E4000DA40BA /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				854973FB1CD9D86300049669 /* UIView+Extension.h */,
+				854973FC1CD9D86300049669 /* UIView+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -724,6 +752,32 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		854973FE1CD9E5C600049669 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				854973FF1CD9E5C600049669 /* PList */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		854973FF1CD9E5C600049669 /* PList */ = {
+			isa = PBXGroup;
+			children = (
+				854974001CD9E5C600049669 /* categories.plist */,
+				854974011CD9E5C600049669 /* cities.plist */,
+				854974021CD9E5C600049669 /* city.plist */,
+				854974031CD9E5C600049669 /* citydata.plist */,
+				854974041CD9E5C600049669 /* citydict.plist */,
+				854974051CD9E5C600049669 /* cityGroups.plist */,
+				854974061CD9E5C600049669 /* menuData.plist */,
+				854974071CD9E5C600049669 /* MineInformationData.plist */,
+				854974081CD9E5C600049669 /* MoreData.plist */,
+				854974091CD9E5C600049669 /* PortalSettings.plist */,
+				8549740A1CD9E5C600049669 /* sorts.plist */,
+			);
+			path = PList;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -783,16 +837,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				854974121CD9E5C600049669 /* MineInformationData.plist in Resources */,
 				854973CE1CD9A1D600049669 /* Lato-Bold.ttf in Resources */,
+				8549740C1CD9E5C600049669 /* cities.plist in Resources */,
+				854974151CD9E5C600049669 /* sorts.plist in Resources */,
 				851B65011CD8927E00DA40BA /* Main.storyboard in Resources */,
 				851B64CA1CD877C200DA40BA /* LaunchScreen.storyboard in Resources */,
 				854973D01CD9A1D600049669 /* Lato-Light.ttf in Resources */,
+				854974101CD9E5C600049669 /* cityGroups.plist in Resources */,
 				8549732D1CD98D9D00049669 /* TRMainTableViewCell.xib in Resources */,
 				851B64C71CD877C200DA40BA /* Assets.xcassets in Resources */,
 				854973FA1CD9D26E00049669 /* TRBusinessHeadView.xib in Resources */,
 				854973CB1CD9A1D600049669 /* LICENSE in Resources */,
 				854973E11CD9A1D600049669 /* MJRefresh.bundle in Resources */,
 				854973D11CD9A1D600049669 /* Lato-Regular.ttf in Resources */,
+				854974141CD9E5C600049669 /* PortalSettings.plist in Resources */,
+				854974111CD9E5C600049669 /* menuData.plist in Resources */,
+				8549740E1CD9E5C600049669 /* citydata.plist in Resources */,
+				8549740F1CD9E5C600049669 /* citydict.plist in Resources */,
+				8549740B1CD9E5C600049669 /* categories.plist in Resources */,
+				854974131CD9E5C600049669 /* MoreData.plist in Resources */,
+				8549740D1CD9E5C600049669 /* city.plist in Resources */,
 				854973CF1CD9A1D600049669 /* Lato-Italic.ttf in Resources */,
 				854973CD1CD9A1D600049669 /* flat-ui-icons-regular.ttf in Resources */,
 			);
@@ -813,6 +878,7 @@
 				851B64EA1CD87E5100DA40BA /* DPAPI.m in Sources */,
 				854973C41CD9A1D600049669 /* UIPopoverController+FlatUI.m in Sources */,
 				8549732B1CD97A2600049669 /* TRMeViewController.m in Sources */,
+				854973FD1CD9D86300049669 /* UIView+Extension.m in Sources */,
 				854973F11CD9A1D600049669 /* UIImage+MultiFormat.m in Sources */,
 				854973BB1CD9A1D600049669 /* FUISegmentedControl.m in Sources */,
 				854973D21CD9A1D600049669 /* MBProgressHUD.m in Sources */,
