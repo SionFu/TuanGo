@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TRBusinessHeadView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TRBusinessHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9pI-RZ-Njk">
+                    <rect key="frame" x="0.0" y="0.0" width="125" height="50"/>
+                    <animations/>
+                    <state key="normal" title="全部分类"/>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="9pI-RZ-Njk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MhI-hG-Gvr"/>
+                <constraint firstItem="9pI-RZ-Njk" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.33" id="Tfl-1m-Cmh"/>
+                <constraint firstItem="9pI-RZ-Njk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="puD-0t-ZaM"/>
+                <constraint firstItem="9pI-RZ-Njk" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="ycC-nm-yuT"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="535" y="152"/>
+        </view>
+    </objects>
+</document>
