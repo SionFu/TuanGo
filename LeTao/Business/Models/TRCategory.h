@@ -29,6 +29,10 @@
  * small_icon
  */
 @property (nonatomic,strong) NSString *small_icon;
+/**
+ *  <#Description#>
+ */
+@property (nonatomic, strong) NSString *map_icon;
 
 /**
  * 主区域对应子区域的名字数组

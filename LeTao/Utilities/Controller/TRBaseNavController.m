@@ -9,6 +9,7 @@
 #import "TRBaseNavController.h"
 #import "DPAPI.h"
 #import "TRMataDataTool.h"
+#import "UIColor+FlatUI.h"
 
 @interface TRBaseNavController ()
 @end
@@ -21,14 +22,19 @@
      [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.929 green:0.420 blue:0.416 alpha:0.350]];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     
-    //设置tabBar选中字体颜色
-    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-                                                       [UIColor redColor], NSForegroundColorAttributeName,
-                                                       nil] forState:UIControlStateSelected];
-    [self.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-                                               [UIColor whiteColor], NSForegroundColorAttributeName,
-                                               nil]];
 
+    
+      //设置navigationBar属性
+    [self.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,nil]];
+    [[UINavigationBar appearance]setBarTintColor:[UIColor colorFromHexCode:@"eb5352"]];
+
+    
+    //设置tabBar选中字体颜色  拿到颜色对象
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary
+                         dictionaryWithObjectsAndKeys:[UIColor redColor], NSForegroundColorAttributeName,nil]
+                                             forState:UIControlStateSelected];
+    //修改tabBaritem的图片 维持原样,不要重新渲染
+    self.tabBarItem.selectedImage = [self.tabBarItem.selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
 }
 
 
@@ -37,14 +43,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

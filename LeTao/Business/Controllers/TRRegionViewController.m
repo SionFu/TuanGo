@@ -22,7 +22,7 @@
     [super viewDidLoad];
     self.preferredContentSize = CGSizeMake(260, 400);
 #warning 硬编码
-    self.regionArray = [TRMataDataTool getAllRegionsCityName:@"北京"];
+    self.regionArray = [TRMataDataTool getAllRegionsCityName:@"衢州"];
    
     //创建并添加mateDataView
     [self addMetaDataView];

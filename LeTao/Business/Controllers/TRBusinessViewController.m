@@ -12,6 +12,7 @@
 #import "TRSortViewController.h"
 #import "TRRegionViewController.h"
 #import "TRCategoryViewController.h"
+#import "TRSearchViewController.h"
 
 @interface TRBusinessViewController ()<UIPopoverPresentationControllerDelegate>
 //记录头部视图
@@ -58,6 +59,7 @@
 }
 
 #pragma mark -- 和界面相关
+
 - (void)addTargetsForButton{
     //给排序按钮添加方法
     [self.headerView.sortButton addTarget:self action:@selector(clickSortButton) forControlEvents:UIControlEventTouchUpInside];
@@ -67,6 +69,7 @@
     [self.headerView.categoryButton addTarget:self action:@selector(clickCategoryButton) forControlEvents:UIControlEventTouchUpInside];
     
 }
+
 - (void)setUpHeaderView{
     //创建
     //直接添加nib视图 返回多个视图
@@ -79,6 +82,12 @@
 }
 
 #pragma mark -- 按钮的触发的方法
+
+- (IBAction)searchButtonClick:(id)sender {
+    TRSearchViewController *searchVC = [[TRSearchViewController alloc]init];
+    [self.navigationController pushViewController:searchVC animated:YES];
+    
+}
 - (void)clickCategoryButton {
     
     self.categoryViewController.modalPresentationStyle = UIModalPresentationPopover;

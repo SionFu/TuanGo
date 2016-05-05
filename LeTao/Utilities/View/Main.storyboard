@@ -61,11 +61,17 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="商家" id="npB-sn-gMH"/>
+                    <navigationItem key="navigationItem" title="商家" id="npB-sn-gMH">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="mBo-bT-ths">
+                            <connections>
+                                <action selector="searchButtonClick:" destination="oZd-3I-nTP" id="jVC-pl-Hx6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nLg-ma-saN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="775" y="-389"/>
+            <point key="canvasLocation" x="765" y="-247"/>
         </scene>
         <!--主页-->
         <scene sceneID="PIB-op-Q5M">
@@ -105,7 +111,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Dc-gK-Wnt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="312" y="-389"/>
+            <point key="canvasLocation" x="312" y="-247"/>
         </scene>
         <!--我的-->
         <scene sceneID="dkW-4h-2hg">

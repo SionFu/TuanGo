@@ -17,14 +17,21 @@
 @end
 
 @implementation TRCategoryViewController
-
+- (NSArray *)categoryArray {
+    if(_categoryArray == nil) {
+        _categoryArray = [TRMataDataTool getAllCategory];
+    }
+    return _categoryArray;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.preferredContentSize = CGSizeMake(260, 400);
 #warning 硬编码
-    self.categoryArray = [TRMataDataTool getAllRegionsCityName:@"北京"];
     //创建并添加mateDataView
     [self addMetaDataView];
+    
+    //设置添加的view的frame为视图控制器的bounds
+    self.mateDataView.frame = self.view.bounds;
 }
 
 - (void)addMetaDataView{
@@ -55,7 +62,7 @@
         NSInteger selectedRow = [self.mateDataView.mainTableView indexPathForSelectedRow].row;
         //获取这个行号里面内容的个数
         TRCategory *cate = self.categoryArray[selectedRow];
-        return cate.subregions.count;
+        return cate.subcategories.count;
     }
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -68,7 +75,15 @@
         TRCategory *cate = self.categoryArray[indexPath.row];
         //3.赋值
         cell.textLabel.text = cate.name;
-        if (cate.subregions.count > 0) {
+        //4.显示图标
+        if (cate.small_icon != nil) {
+            cell.imageView.image = [UIImage imageNamed:cate.small_icon];
+        }
+        //5.显示高亮图标
+        if (cate.highlighted_icon != nil) {
+            cell.imageView.highlightedImage = [UIImage imageNamed:cate.highlighted_icon];
+        }
+        if (cate.subcategories.count > 0) {
             //有子区域
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         }else{
@@ -82,7 +97,7 @@
         //右边的行号 区域模型对象;赋值
         NSInteger selectedRow = [self.mateDataView.mainTableView indexPathForSelectedRow].row;
         TRCategory *cate = self.categoryArray[selectedRow];
-        cell.textLabel.text = cate.subregions[indexPath.row];
+        cell.textLabel.text = cate.subcategories[indexPath.row];
         return cell;
         
     }
@@ -92,4 +107,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 @end

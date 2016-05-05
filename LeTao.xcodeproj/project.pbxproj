@@ -114,6 +114,7 @@
 		856992191CDAED60006BF901 /* TRMetaDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 856992181CDAED60006BF901 /* TRMetaDataView.xib */; };
 		8569921C1CDAF898006BF901 /* TRTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8569921B1CDAF898006BF901 /* TRTableViewCell.m */; };
 		8577138B1CDB30CE00E52931 /* TRCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8577138A1CDB30CE00E52931 /* TRCategory.m */; };
+		8577138E1CDB39A000E52931 /* TRSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8577138D1CDB39A000E52931 /* TRSearchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -310,6 +311,8 @@
 		8569921B1CDAF898006BF901 /* TRTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTableViewCell.m; sourceTree = "<group>"; };
 		857713891CDB30CE00E52931 /* TRCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRCategory.h; sourceTree = "<group>"; };
 		8577138A1CDB30CE00E52931 /* TRCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRCategory.m; sourceTree = "<group>"; };
+		8577138C1CDB39A000E52931 /* TRSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRSearchViewController.h; sourceTree = "<group>"; };
+		8577138D1CDB39A000E52931 /* TRSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSearchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -388,6 +391,8 @@
 				856992121CDAE696006BF901 /* TRRegionViewController.m */,
 				8569920F1CDAE696006BF901 /* TRCategoryViewController.h */,
 				856992101CDAE696006BF901 /* TRCategoryViewController.m */,
+				8577138C1CDB39A000E52931 /* TRSearchViewController.h */,
+				8577138D1CDB39A000E52931 /* TRSearchViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -977,6 +982,7 @@
 				854973B91CD9A1D600049669 /* FUICellBackgroundView.m in Sources */,
 				854973DA1CD9A1D600049669 /* MJRefreshAutoStateFooter.m in Sources */,
 				854973C51CD9A1D600049669 /* UIProgressView+FlatUI.m in Sources */,
+				8577138E1CDB39A000E52931 /* TRSearchViewController.m in Sources */,
 				854973C71CD9A1D600049669 /* UIStepper+FlatUI.m in Sources */,
 				854973EA1CD9A1D600049669 /* SDWebImageDecoder.m in Sources */,
 				854973F51CD9A1D600049669 /* UIView+WebCacheOperation.m in Sources */,

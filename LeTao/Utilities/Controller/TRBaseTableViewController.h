@@ -16,5 +16,6 @@
 //父类调用子类实现发送请求的参数
 -(void)settingRequestparams:(NSMutableDictionary *)params;
 
-
+//子类调用,父类实现发送请求方法
+- (void)loadNewDeals;
 @end

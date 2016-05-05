@@ -35,7 +35,7 @@
         [button setBackgroundImage:[UIImage imageNamed:@"btn_filter_normal"] forState:UIControlStateNormal];
         [button setBackgroundImage:[UIImage imageNamed:@"btn_filter_selected"] forState:UIControlStateHighlighted];
         [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        button.titleLabel.font = [UIFont systemFontOfSize:10];
+        button.titleLabel.font = [UIFont systemFontOfSize:12];
         [self.view addSubview:button];
     }
     
