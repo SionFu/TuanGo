@@ -25,6 +25,9 @@
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
                                                        [UIColor redColor], NSForegroundColorAttributeName,
                                                        nil] forState:UIControlStateSelected];
+    [self.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                               [UIColor whiteColor], NSForegroundColorAttributeName,
+                                               nil]];
 
 }
 

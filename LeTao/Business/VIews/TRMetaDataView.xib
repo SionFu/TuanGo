@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TRMetaDataView">
+            <rect key="frame" x="0.0" y="0.0" width="271" height="514"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <userGuides>
+                <userLayoutGuide location="136" affinity="minX"/>
+            </userGuides>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UOL-So-H0u" userLabel="Mian">
+                    <rect key="frame" x="0.0" y="0.0" width="136" height="514"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HeP-ED-wXw" userLabel="Sub">
+                    <rect key="frame" x="135" y="0.0" width="136" height="514"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="UOL-So-H0u" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="4Gu-Wd-ZKW"/>
+                <constraint firstItem="UOL-So-H0u" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="I1r-Xu-XFY"/>
+                <constraint firstItem="HeP-ED-wXw" firstAttribute="height" secondItem="UOL-So-H0u" secondAttribute="height" id="IMJ-oa-YYx"/>
+                <constraint firstItem="HeP-ED-wXw" firstAttribute="width" secondItem="UOL-So-H0u" secondAttribute="width" id="Kxj-iB-gfw"/>
+                <constraint firstItem="UOL-So-H0u" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Lau-cW-Swu"/>
+                <constraint firstAttribute="trailing" secondItem="HeP-ED-wXw" secondAttribute="trailing" id="OrY-RT-X34"/>
+                <constraint firstAttribute="bottom" secondItem="UOL-So-H0u" secondAttribute="bottom" id="T4T-EC-hIT"/>
+                <constraint firstAttribute="bottom" secondItem="HeP-ED-wXw" secondAttribute="bottom" id="gtj-2T-hP9"/>
+                <constraint firstItem="HeP-ED-wXw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="nul-lp-eLT"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="mainTableView" destination="UOL-So-H0u" id="XUd-hf-Ode"/>
+                <outlet property="subTableView" destination="HeP-ED-wXw" id="fDi-rA-2B6"/>
+            </connections>
+            <point key="canvasLocation" x="371.5" y="312"/>
+        </view>
+    </objects>
+</document>

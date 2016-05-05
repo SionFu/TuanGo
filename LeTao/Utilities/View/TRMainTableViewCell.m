@@ -44,9 +44,16 @@
     //标题
     self.dealDescLabel.text = deal.title;
     //团购价格
-    self.currentPriceLabel.text = [NSString stringWithFormat:@"¥%@",deal.current_price];
+
+    NSString *str = [NSString stringWithFormat:@"团购价格:¥%@",deal.current_price];
+    
+    if (str.length  > 10) {
+        self.currentPriceLabel.text  = [str substringToIndex:10];
+    }else{
+        self.currentPriceLabel.text = str;
+    }
     //原价
-    self.listPriceLabel.text = [NSString stringWithFormat:@"¥%@",deal.list_price];
+    self.listPriceLabel.text = [NSString stringWithFormat:@"原价:¥%@",deal.list_price];
     
     //显示折扣
     float discount = [deal.current_price floatValue] / [deal.list_price floatValue] *10;

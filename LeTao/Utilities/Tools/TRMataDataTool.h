@@ -19,4 +19,20 @@
  * 返回所有的排序数组TRSort
  */
 + (NSArray*)getAllSorts;
+/**
+ *  返回所有城市的数组(TRCity)
+ */
++ (NSArray *)getAllCity;
+/**
+ * 返回所有城市的全部分类(TRCategory)
+ */
++ (NSArray *)getAllCategory;
+/**
+ *  给定城市名字,返回对应该城市的所有区域的数组
+ */
++(NSArray *)getAllRegionsCityName:(NSString *)cityName;
+
+/**
+ *  
+ */
 @end

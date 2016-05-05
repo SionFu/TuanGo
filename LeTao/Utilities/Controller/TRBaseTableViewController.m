@@ -132,7 +132,6 @@
     if (self.lastesRequest != request) {
         return;
     }
-    
     //每次页面数为1时清除所有数据,切换到(其他类)电影时清除原来的数据
     if (self.page == 1) {
         [self.dealsArray removeAllObjects];

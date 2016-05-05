@@ -105,6 +105,15 @@
 		854974141CD9E5C600049669 /* PortalSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 854974091CD9E5C600049669 /* PortalSettings.plist */; };
 		854974151CD9E5C600049669 /* sorts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8549740A1CD9E5C600049669 /* sorts.plist */; };
 		854974181CD9E6CE00049669 /* TRSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 854974171CD9E6CE00049669 /* TRSort.m */; };
+		8549741B1CD9ED6700049669 /* TRSortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8549741A1CD9ED6700049669 /* TRSortViewController.m */; };
+		8569920B1CDAD97B006BF901 /* TRCity.m in Sources */ = {isa = PBXBuildFile; fileRef = 8569920A1CDAD97B006BF901 /* TRCity.m */; };
+		8569920E1CDADA3F006BF901 /* TRRegion.m in Sources */ = {isa = PBXBuildFile; fileRef = 8569920D1CDADA3F006BF901 /* TRRegion.m */; };
+		856992131CDAE696006BF901 /* TRCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 856992101CDAE696006BF901 /* TRCategoryViewController.m */; };
+		856992141CDAE696006BF901 /* TRRegionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 856992121CDAE696006BF901 /* TRRegionViewController.m */; };
+		856992171CDAED32006BF901 /* TRMetaDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 856992161CDAED32006BF901 /* TRMetaDataView.m */; };
+		856992191CDAED60006BF901 /* TRMetaDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 856992181CDAED60006BF901 /* TRMetaDataView.xib */; };
+		8569921C1CDAF898006BF901 /* TRTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8569921B1CDAF898006BF901 /* TRTableViewCell.m */; };
+		8577138B1CDB30CE00E52931 /* TRCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8577138A1CDB30CE00E52931 /* TRCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -284,6 +293,23 @@
 		8549740A1CD9E5C600049669 /* sorts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sorts.plist; sourceTree = "<group>"; };
 		854974161CD9E6CE00049669 /* TRSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRSort.h; sourceTree = "<group>"; };
 		854974171CD9E6CE00049669 /* TRSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSort.m; sourceTree = "<group>"; };
+		854974191CD9ED6700049669 /* TRSortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRSortViewController.h; sourceTree = "<group>"; };
+		8549741A1CD9ED6700049669 /* TRSortViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSortViewController.m; sourceTree = "<group>"; };
+		856992091CDAD97B006BF901 /* TRCity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRCity.h; sourceTree = "<group>"; };
+		8569920A1CDAD97B006BF901 /* TRCity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRCity.m; sourceTree = "<group>"; };
+		8569920C1CDADA3F006BF901 /* TRRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRegion.h; sourceTree = "<group>"; };
+		8569920D1CDADA3F006BF901 /* TRRegion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRRegion.m; sourceTree = "<group>"; };
+		8569920F1CDAE696006BF901 /* TRCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRCategoryViewController.h; sourceTree = "<group>"; };
+		856992101CDAE696006BF901 /* TRCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRCategoryViewController.m; sourceTree = "<group>"; };
+		856992111CDAE696006BF901 /* TRRegionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRegionViewController.h; sourceTree = "<group>"; };
+		856992121CDAE696006BF901 /* TRRegionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRRegionViewController.m; sourceTree = "<group>"; };
+		856992151CDAED32006BF901 /* TRMetaDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRMetaDataView.h; sourceTree = "<group>"; };
+		856992161CDAED32006BF901 /* TRMetaDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRMetaDataView.m; sourceTree = "<group>"; };
+		856992181CDAED60006BF901 /* TRMetaDataView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRMetaDataView.xib; sourceTree = "<group>"; };
+		8569921A1CDAF898006BF901 /* TRTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTableViewCell.h; sourceTree = "<group>"; };
+		8569921B1CDAF898006BF901 /* TRTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTableViewCell.m; sourceTree = "<group>"; };
+		857713891CDB30CE00E52931 /* TRCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRCategory.h; sourceTree = "<group>"; };
+		8577138A1CDB30CE00E52931 /* TRCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRCategory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -356,6 +382,12 @@
 			children = (
 				851B65171CD8A53900DA40BA /* TRBusinessViewController.h */,
 				851B65181CD8A53900DA40BA /* TRBusinessViewController.m */,
+				854974191CD9ED6700049669 /* TRSortViewController.h */,
+				8549741A1CD9ED6700049669 /* TRSortViewController.m */,
+				856992111CDAE696006BF901 /* TRRegionViewController.h */,
+				856992121CDAE696006BF901 /* TRRegionViewController.m */,
+				8569920F1CDAE696006BF901 /* TRCategoryViewController.h */,
+				856992101CDAE696006BF901 /* TRCategoryViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -365,6 +397,12 @@
 			children = (
 				854974161CD9E6CE00049669 /* TRSort.h */,
 				854974171CD9E6CE00049669 /* TRSort.m */,
+				856992091CDAD97B006BF901 /* TRCity.h */,
+				8569920A1CDAD97B006BF901 /* TRCity.m */,
+				8569920C1CDADA3F006BF901 /* TRRegion.h */,
+				8569920D1CDADA3F006BF901 /* TRRegion.m */,
+				857713891CDB30CE00E52931 /* TRCategory.h */,
+				8577138A1CDB30CE00E52931 /* TRCategory.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -375,6 +413,11 @@
 				854973F61CD9D25900049669 /* TRBusinessHeadView.h */,
 				854973F71CD9D25900049669 /* TRBusinessHeadView.m */,
 				854973F91CD9D26E00049669 /* TRBusinessHeadView.xib */,
+				856992151CDAED32006BF901 /* TRMetaDataView.h */,
+				856992161CDAED32006BF901 /* TRMetaDataView.m */,
+				856992181CDAED60006BF901 /* TRMetaDataView.xib */,
+				8569921A1CDAF898006BF901 /* TRTableViewCell.h */,
+				8569921B1CDAF898006BF901 /* TRTableViewCell.m */,
 			);
 			path = VIews;
 			sourceTree = "<group>";
@@ -855,6 +898,7 @@
 				854973FA1CD9D26E00049669 /* TRBusinessHeadView.xib in Resources */,
 				854973CB1CD9A1D600049669 /* LICENSE in Resources */,
 				854973E11CD9A1D600049669 /* MJRefresh.bundle in Resources */,
+				856992191CDAED60006BF901 /* TRMetaDataView.xib in Resources */,
 				854973D11CD9A1D600049669 /* Lato-Regular.ttf in Resources */,
 				854974141CD9E5C600049669 /* PortalSettings.plist in Resources */,
 				854974111CD9E5C600049669 /* menuData.plist in Resources */,
@@ -889,6 +933,8 @@
 				854973D21CD9A1D600049669 /* MBProgressHUD.m in Sources */,
 				854973DE1CD9A1D600049669 /* MJRefreshGifHeader.m in Sources */,
 				854973D51CD9A1D600049669 /* MJRefreshComponent.m in Sources */,
+				8549741B1CD9ED6700049669 /* TRSortViewController.m in Sources */,
+				8569920E1CDADA3F006BF901 /* TRRegion.m in Sources */,
 				854973C91CD9A1D600049669 /* UITableViewCell+FlatUI.m in Sources */,
 				854973BC1CD9A1D600049669 /* FUISwitch.m in Sources */,
 				854973F01CD9A1D600049669 /* UIImage+GIF.m in Sources */,
@@ -902,6 +948,7 @@
 				851B650A1CD89EE700DA40BA /* TRBaseNavController.m in Sources */,
 				854973CA1CD9A1D600049669 /* UIToolbar+FlatUI.m in Sources */,
 				854973DB1CD9A1D600049669 /* MJRefreshBackGifFooter.m in Sources */,
+				856992171CDAED32006BF901 /* TRMetaDataView.m in Sources */,
 				854973BA1CD9A1D600049669 /* FUIPopoverBackgroundView.m in Sources */,
 				854973EF1CD9A1D600049669 /* UIButton+WebCache.m in Sources */,
 				854973E41CD9A1D600049669 /* UIScrollView+MJRefresh.m in Sources */,
@@ -912,10 +959,12 @@
 				854973F81CD9D25900049669 /* TRBusinessHeadView.m in Sources */,
 				854973DC1CD9A1D600049669 /* MJRefreshBackNormalFooter.m in Sources */,
 				851B65191CD8A53900DA40BA /* TRBusinessViewController.m in Sources */,
+				8569920B1CDAD97B006BF901 /* TRCity.m in Sources */,
 				854973F21CD9A1D600049669 /* UIImage+WebP.m in Sources */,
 				854973C11CD9A1D600049669 /* UIFont+FlatUI.m in Sources */,
 				854973BF1CD9A1D600049669 /* UIBarButtonItem+FlatUI.m in Sources */,
 				854973D81CD9A1D600049669 /* MJRefreshAutoGifFooter.m in Sources */,
+				856992141CDAE696006BF901 /* TRRegionViewController.m in Sources */,
 				854973E51CD9A1D600049669 /* UIView+MJExtension.m in Sources */,
 				854973D31CD9A1D600049669 /* MJRefreshAutoFooter.m in Sources */,
 				851B65071CD89B3C00DA40BA /* TRMataDataTool.m in Sources */,
@@ -933,6 +982,7 @@
 				854973F51CD9A1D600049669 /* UIView+WebCacheOperation.m in Sources */,
 				854973C81CD9A1D600049669 /* UITabBar+FlatUI.m in Sources */,
 				854973BE1CD9A1D600049669 /* NSString+Icons.m in Sources */,
+				8569921C1CDAF898006BF901 /* TRTableViewCell.m in Sources */,
 				851B64ED1CD8813A00DA40BA /* Foundation+Log.m in Sources */,
 				854973B81CD9A1D600049669 /* FUIButton.m in Sources */,
 				851B650D1CD89F1200DA40BA /* TRMainTabController.m in Sources */,
@@ -942,10 +992,12 @@
 				854973D71CD9A1D600049669 /* MJRefreshHeader.m in Sources */,
 				851B651C1CD8A64200DA40BA /* TRMeTableViewController.m in Sources */,
 				854973E81CD9A1D600049669 /* SDImageCache.m in Sources */,
+				8577138B1CDB30CE00E52931 /* TRCategory.m in Sources */,
 				854973D91CD9A1D600049669 /* MJRefreshAutoNormalFooter.m in Sources */,
 				854973E61CD9A1D600049669 /* MKAnnotationView+WebCache.m in Sources */,
 				854973D41CD9A1D600049669 /* MJRefreshBackFooter.m in Sources */,
 				854973CC1CD9A1D600049669 /* README.markdown in Sources */,
+				856992131CDAE696006BF901 /* TRCategoryViewController.m in Sources */,
 				854973EC1CD9A1D600049669 /* SDWebImageDownloaderOperation.m in Sources */,
 				854973E71CD9A1D600049669 /* NSData+ImageContentType.m in Sources */,
 				854973F31CD9A1D600049669 /* UIImageView+HighlightedWebCache.m in Sources */,
@@ -1051,7 +1103,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = LeTao/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fdson.com.LeTao;
@@ -1063,7 +1114,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = LeTao/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fdson.com.LeTao;
