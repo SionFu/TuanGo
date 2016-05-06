@@ -36,6 +36,8 @@
         [button setBackgroundImage:[UIImage imageNamed:@"btn_filter_selected"] forState:UIControlStateHighlighted];
         [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         button.titleLabel.font = [UIFont systemFontOfSize:12];
+        button.tag = i-1 ;
+        [button addTarget:self action:@selector(clickButton:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:button];
     }
     
@@ -46,7 +48,18 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+-(void)clickButton:(UIButton *)button {
+    
+    //1.发送通知(参数1~7)
+    /**
+     *  发送sort值和tag的直接关系 sort = tag  sort = self.sortArray[tag].value;
+     */
+    //1.1
+    TRSort *sort = self.sortArray[button.tag];
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"TRSortDidChange" object:self userInfo:@{@"SortValue":sort.value}];
+    //收回控制器
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 
 

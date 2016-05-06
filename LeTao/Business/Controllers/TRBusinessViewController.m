@@ -13,6 +13,11 @@
 #import "TRRegionViewController.h"
 #import "TRCategoryViewController.h"
 #import "TRSearchViewController.h"
+#import "TRRegion.h"
+#import "TRCategory.h"
+#import "TRCity.h"
+#import "TRMataDataTool.h"
+
 
 @interface TRBusinessViewController ()<UIPopoverPresentationControllerDelegate>
 //记录头部视图
@@ -26,6 +31,20 @@
 
 //记录分类控制器
 @property (nonatomic,strong) TRCategoryViewController *categoryViewController;
+
+//记录记录所有用户选择的值(排序+分类+区域+城市)
+@property (nonatomic, strong) NSNumber *sortValue;
+
+//主区域的名字
+@property (nonatomic, strong) NSString *mainRegionName;
+
+//子区域的名字
+@property (nonatomic, strong) NSString *subRegionName;
+
+//主分类名字
+@property (nonatomic, strong) NSString *mainCategoryName;
+//子分类名字
+@property (nonatomic, strong) NSString *subCategoryName;
 @end
 
 @implementation TRBusinessViewController
@@ -56,9 +75,81 @@
     
     //给三个button添加action
     [self addTargetsForButton];
+    
+    //添加通知监听方法
+    [self listenNotifications];
+    
+    //添加左上角item
+    [self setUpItem];
+    
+
+}
+#pragma mark --和通知相关的方法
+- (void)listenNotifications {
+    //监听排序
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(sortDidChange:) name:@"TRSortDidChange" object:nil];
+    //监听区域
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(regionDidChange:) name:@"TRRegionDidChange" object:nil];
+    //监听分类
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(categoryDidChange:) name:@"TRCategoryDidChange" object:nil];
+}
+
+
+- (void)sortDidChange:(NSNotification *)notification {
+    //获取参数 (类型:发送端决定)
+    NSNumber *sortValue = notification.userInfo[@"SortValue"];
+    //设置参数(settingRe)
+    self.sortValue = sortValue;
+    [self loadNewDeals];
+    
+}
+
+//获得选中的城市
+- (void)regionDidChange:(NSNotification *)notification {
+    //获取参数(主区域+子区域)
+    TRRegion *region = notification.userInfo[@"MainRegion"];
+    NSString *subRegin = notification.userInfo[@"SubReginName"];
+    //设置参数(判断子区域+排序"全部")
+    
+    if ([region.name isEqualToString: @"全部"]) {
+        self.mainRegionName = nil;
+        
+    }else{
+        if ([subRegin isEqualToString:@"全部"]) {
+            self.subRegionName = region.name;
+        }else{
+            self.subRegionName = subRegin;
+        }
+    }
+    
+    //发送数据请求
+    [self loadNewDeals];
+}
+- (void)categoryDidChange:(NSNotification *)notification {
+        //获取参数
+    TRCategory *cate = notification.userInfo[@"MainCategory"];
+    NSString *subCate = notification.userInfo[@"SubCategoryName"];
+    
+    if ([cate.name isEqualToString:@"全部分类"]) {
+        //点中全部
+        self.mainCategoryName = nil;
+    }else{
+        if (subCate == nil) {
+            self.mainCategoryName = cate.name;
+        }else{
+            self.subCategoryName = subCate;
+        }
+    }
+    [self loadNewDeals];
 }
 
 #pragma mark -- 和界面相关
+
+- (void)setUpItem{
+    //创建左上角item项目
+    UIBarButtonItem *cityItem = [[UIBarButtonItem alloc]initWithTitle:[TRMataDataTool getSelectedCityName] style:UIBarButtonItemStyleDone target:self action:nil];
+    self.navigationItem.leftBarButtonItem = cityItem;
+}
 
 - (void)addTargetsForButton{
     //给排序按钮添加方法
@@ -134,12 +225,45 @@
 
 #pragma mark -- 设置商家的请求的参数
 - (void)settingRequestparams:(NSMutableDictionary *)params{
-    //设置界面上的分类 区域 排序 城市
+    //设置界面上的 区域 分类 城市  排序
 #warning TOOO:设置四个参数
-    params[@"city"]     = @"北京";
-    params[@"category"] = @"美食";
-    params[@"region"]   = @"朝阳区";
-    params[@"sort"]     = @2;
+    //可以获取到城市的名字(定位 +  用户自定义选择)
+    //区域
+    if ([TRMataDataTool getSelectedCityName]) {
+        params[@"city"] = [TRMataDataTool getSelectedCityName];
+    }else{
+        //获取不到位置的时候直接用北京为默认城市
+        params[@"city"] = @"北京";
+    }
+    
+    //设置分类
+    if (self.mainCategoryName) {
+        //有子分类
+        params[@"category"] = self.subCategoryName;
+    }else{
+        //没有子分类
+        params[@"category"] = self.subCategoryName;
+    }
+    
+    
+    
+    //设置城市
+    if (self.mainRegionName) {
+        if (self.subRegionName) {
+            //有子区域
+            params[@"region"] = self.subRegionName;
+        }else{
+            //没有子区域
+            params[@"region"] = self.mainRegionName;
+        }
+    }
+    
+
+    //设置排序
+    if (self.sortValue) {
+       params[@"sort"]  = self.sortValue;
+    }
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

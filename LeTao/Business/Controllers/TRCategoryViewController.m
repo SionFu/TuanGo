@@ -11,6 +11,7 @@
 #import "TRMataDataTool.h"
 #import "TRMetaDataView.h"
 #import "TRTableViewCell.h"
+
 @interface TRCategoryViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic, strong) NSArray *categoryArray;
 @property (nonatomic,strong)TRMetaDataView *mateDataView;
@@ -47,6 +48,18 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (tableView == self.mateDataView.mainTableView) {
         [self.mateDataView.subTableView reloadData];
+        TRCategory *cate = self.categoryArray[indexPath.row];
+        if (cate.subcategories.count == 0) {
+            [[NSNotificationCenter defaultCenter]postNotificationName:@"TRCategoryDidChange" object:self userInfo:@{@"MainCategory":cate}];
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }
+    }else{
+        NSInteger leftRow = [self.mateDataView.mainTableView indexPathForSelectedRow].row;
+        NSInteger rightRow = [self.mateDataView.subTableView indexPathForSelectedRow].row;
+        TRCategory *cate = self.categoryArray[leftRow];
+        NSString *subReginName = cate.subcategories[rightRow];
+        [[NSNotificationCenter defaultCenter]postNotificationName:@"TRCategoryDidChange" object:self userInfo:@{@"MainCategory":cate,@"SubCategoryName":subReginName}];
+        [self dismissViewControllerAnimated:YES completion:nil];
     }
 }
 

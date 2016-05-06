@@ -110,16 +110,14 @@
     DPAPI *api = [DPAPI new];
     //给定城市参数
     /**
-     *  调用子类的设置参数逻辑(方法)
-     主页:用户选择哪个按钮City
-     
+       调用子类的设置参数逻辑(方法)
+       主页:用户选择哪个按钮City
      */
     
     NSMutableDictionary *paramsDic = [NSMutableDictionary dictionary];
     [self settingRequestparams:paramsDic];
     //添加page参数
     paramsDic[@"page"] = @(self.page);
-//    paramsDic[@"city"] = @"衢州";
     NSLog(@"%@",paramsDic[@"page"]);
     //把最后一次请求对象记录
     self.lastesRequest = [api requestWithURL:@"v1/deal/find_deals" params:paramsDic delegate:self];

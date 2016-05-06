@@ -7,7 +7,8 @@
 //
 
 #import "TRHomeViewController.h"
-
+#import "TRLocationManager.h"
+#import "TRMataDataTool.h"
 @interface TRHomeViewController ()
 
 @end
@@ -16,9 +17,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self getUserCityName];
 }
-
+- (void)getUserCityName{
+    [TRLocationManager getUserCityName:^(NSString *cityName) {
+       //使用工具类存储位置信息
+        [TRMataDataTool setSelectedCityName:cityName];
+    }];
+}
 #pragma mark -- 设置请求参数
 - (void)settingRequestparams:(NSMutableDictionary *)params{
     //设置category(界面选择按钮)+city(用户的位置)

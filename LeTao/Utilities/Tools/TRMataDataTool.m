@@ -98,8 +98,13 @@ static NSArray *categoryArray = nil;
 //    }
 //    return [mutableArray copy];
 }
-
-
+static NSString *_cityName = nil;
++ (void)setSelectedCityName:(NSString *)cityName{
+    _cityName = cityName;
+}
++ (NSString *)getSelectedCityName{
+    return _cityName;
+}
 
 
 

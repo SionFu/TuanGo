@@ -33,6 +33,12 @@
 +(NSArray *)getAllRegionsCityName:(NSString *)cityName;
 
 /**
- *  
+ *  给定城市的名字(set:赋值)
  */
++ (void)setSelectedCityName:(NSString *)cityName;
+
+/**
+ * 返回城市的名字get获取
+ */
++ (NSString *)getSelectedCityName;
 @end

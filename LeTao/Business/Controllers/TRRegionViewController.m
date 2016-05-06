@@ -17,13 +17,11 @@
 @property (nonatomic,strong)TRMetaDataView *mateDataView;
 @end
 @implementation TRRegionViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.preferredContentSize = CGSizeMake(260, 400);
 #warning 硬编码
-    self.regionArray = [TRMataDataTool getAllRegionsCityName:@"衢州"];
-   
+    self.regionArray = [TRMataDataTool getAllRegionsCityName:@"北京"];
     //创建并添加mateDataView
     [self addMetaDataView];
 }
@@ -39,15 +37,28 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (tableView == self.mateDataView.mainTableView) {
         [self.mateDataView.subTableView reloadData];
-    }
+        //数据源
+        TRRegion *regin = self.regionArray[indexPath.row];
+        if (regin.subregions.count == 0) {
+            //发送通知
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"TRRegionDidChange"object:self userInfo:@{@"MainRegion":regin}];
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }
+    }else{
+            //发送通知(子区域的名字)
+            //获取左边和右边的行号
+            NSInteger leftRow = [self.mateDataView.mainTableView indexPathForSelectedRow].row;
+            NSInteger rightRow = [self.mateDataView.subTableView indexPathForSelectedRow].row;
+            TRRegion *ragin = self.regionArray[leftRow];
+            NSString *subReginName = ragin.subregions[rightRow];
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"TRRegionDidChange"object:self userInfo:@{@"SubReginName":subReginName,@"MainRegion":ragin}];
+           [self dismissViewControllerAnimated:YES completion:nil];
+        }
 }
-
 #pragma mark -- DataSource / Delegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (tableView == self.mateDataView.mainTableView) {
-        
         return self.regionArray.count;
-        
     }else{
         //右边的视图
         //获取左边选中的行号(行号)和数组下标 -- 对应)
@@ -74,7 +85,6 @@
             //没有子区域
              cell.accessoryType = UITableViewCellAccessoryNone;
         }return cell;
-        
     }else{
         //右边
         TRTableViewCell *cell = [TRTableViewCell cellWithTableView:tableView withImageName:@"bg_dropdown_rightpart" withSelectedImageName:@"bg_dropdown_right_selected"];

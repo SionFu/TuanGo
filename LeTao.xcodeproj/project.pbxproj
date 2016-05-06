@@ -115,6 +115,7 @@
 		8569921C1CDAF898006BF901 /* TRTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8569921B1CDAF898006BF901 /* TRTableViewCell.m */; };
 		8577138B1CDB30CE00E52931 /* TRCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8577138A1CDB30CE00E52931 /* TRCategory.m */; };
 		8577138E1CDB39A000E52931 /* TRSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8577138D1CDB39A000E52931 /* TRSearchViewController.m */; };
+		85E786A01CDC72C500076B82 /* TRLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E7869F1CDC72C500076B82 /* TRLocationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -313,6 +314,8 @@
 		8577138A1CDB30CE00E52931 /* TRCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRCategory.m; sourceTree = "<group>"; };
 		8577138C1CDB39A000E52931 /* TRSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRSearchViewController.h; sourceTree = "<group>"; };
 		8577138D1CDB39A000E52931 /* TRSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSearchViewController.m; sourceTree = "<group>"; };
+		85E7869E1CDC72C500076B82 /* TRLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRLocationManager.h; sourceTree = "<group>"; };
+		85E7869F1CDC72C500076B82 /* TRLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRLocationManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -558,6 +561,8 @@
 			children = (
 				851B65051CD89B3C00DA40BA /* TRMataDataTool.h */,
 				851B65061CD89B3C00DA40BA /* TRMataDataTool.m */,
+				85E7869E1CDC72C500076B82 /* TRLocationManager.h */,
+				85E7869F1CDC72C500076B82 /* TRLocationManager.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -938,6 +943,7 @@
 				854973D21CD9A1D600049669 /* MBProgressHUD.m in Sources */,
 				854973DE1CD9A1D600049669 /* MJRefreshGifHeader.m in Sources */,
 				854973D51CD9A1D600049669 /* MJRefreshComponent.m in Sources */,
+				85E786A01CDC72C500076B82 /* TRLocationManager.m in Sources */,
 				8549741B1CD9ED6700049669 /* TRSortViewController.m in Sources */,
 				8569920E1CDADA3F006BF901 /* TRRegion.m in Sources */,
 				854973C91CD9A1D600049669 /* UITableViewCell+FlatUI.m in Sources */,
