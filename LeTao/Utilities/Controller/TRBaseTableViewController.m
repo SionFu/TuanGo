@@ -78,12 +78,16 @@
 #pragma mark -- 和界面相关的方法
 -(void)AddRefreshControl{
     //下拉刷新
-    self.tableView.mj_header = [MJRefreshGifHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewDeals)];
+    self.tableView.mj_header = [MJRefreshGifHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewDeal)];
     //执行刷新的动作
     [self.tableView.mj_header beginRefreshing];
     //上拉加载
     self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreDeal)];
     
+}
+//给子类用的刷新事件
+- (void)loadNewDeals{
+    [self.tableView.mj_header beginRefreshing];
 }
 -(void)setUpTableView{
     self.tableView = [[UITableView alloc]initWithFrame:self.view.frame];
@@ -94,7 +98,7 @@
 #pragma mark -- 和网络相关
 
 //下拉刷新
-- (void)loadNewDeals{
+- (void)loadNewDeal{
     //page = 1
     self.page = 1;
     [self sendRequestToServer];

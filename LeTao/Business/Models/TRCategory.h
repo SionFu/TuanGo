@@ -30,7 +30,7 @@
  */
 @property (nonatomic,strong) NSString *small_icon;
 /**
- *  <#Description#>
+ *  要添加在地图上的本地图片
  */
 @property (nonatomic, strong) NSString *map_icon;
 

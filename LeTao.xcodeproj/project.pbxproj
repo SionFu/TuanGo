@@ -106,6 +106,16 @@
 		854974151CD9E5C600049669 /* sorts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8549740A1CD9E5C600049669 /* sorts.plist */; };
 		854974181CD9E6CE00049669 /* TRSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 854974171CD9E6CE00049669 /* TRSort.m */; };
 		8549741B1CD9ED6700049669 /* TRSortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8549741A1CD9ED6700049669 /* TRSortViewController.m */; };
+		854D54E91CDD940A0002F7FE /* TRBusiness.m in Sources */ = {isa = PBXBuildFile; fileRef = 854D54E81CDD940A0002F7FE /* TRBusiness.m */; };
+		854D54EF1CDD968C0002F7FE /* TRAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 854D54EE1CDD968C0002F7FE /* TRAnnotation.m */; };
+		854D54F41CDDCA3E0002F7FE /* TRUIControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 854D54F31CDDCA3E0002F7FE /* TRUIControl.m */; };
+		854D54F61CDDCA4A0002F7FE /* TRUIControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 854D54F51CDDCA4A0002F7FE /* TRUIControl.xib */; };
+		854D54F91CDDCDEE0002F7FE /* TRMenuData.m in Sources */ = {isa = PBXBuildFile; fileRef = 854D54F81CDDCDEE0002F7FE /* TRMenuData.m */; };
+		854D54FF1CDDD3420002F7FE /* TRHoneHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 854D54FE1CDDD3420002F7FE /* TRHoneHeadView.m */; };
+		85594FE01CDD777C00B75EFF /* FDSGroupTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85594FDF1CDD777C00B75EFF /* FDSGroupTableViewController.m */; };
+		85594FE31CDD77BC00B75EFF /* FDSDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 85594FE21CDD77BC00B75EFF /* FDSDataManager.m */; };
+		85594FE61CDD77D100B75EFF /* FDSCity.m in Sources */ = {isa = PBXBuildFile; fileRef = 85594FE51CDD77D100B75EFF /* FDSCity.m */; };
+		85594FE91CDD80A900B75EFF /* TRMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85594FE81CDD80A900B75EFF /* TRMapViewController.m */; };
 		8569920B1CDAD97B006BF901 /* TRCity.m in Sources */ = {isa = PBXBuildFile; fileRef = 8569920A1CDAD97B006BF901 /* TRCity.m */; };
 		8569920E1CDADA3F006BF901 /* TRRegion.m in Sources */ = {isa = PBXBuildFile; fileRef = 8569920D1CDADA3F006BF901 /* TRRegion.m */; };
 		856992131CDAE696006BF901 /* TRCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 856992101CDAE696006BF901 /* TRCategoryViewController.m */; };
@@ -297,6 +307,27 @@
 		854974171CD9E6CE00049669 /* TRSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSort.m; sourceTree = "<group>"; };
 		854974191CD9ED6700049669 /* TRSortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRSortViewController.h; sourceTree = "<group>"; };
 		8549741A1CD9ED6700049669 /* TRSortViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRSortViewController.m; sourceTree = "<group>"; };
+		854D54E71CDD940A0002F7FE /* TRBusiness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRBusiness.h; sourceTree = "<group>"; };
+		854D54E81CDD940A0002F7FE /* TRBusiness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRBusiness.m; sourceTree = "<group>"; };
+		854D54ED1CDD968C0002F7FE /* TRAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRAnnotation.h; sourceTree = "<group>"; };
+		854D54EE1CDD968C0002F7FE /* TRAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRAnnotation.m; sourceTree = "<group>"; };
+		854D54F21CDDCA3E0002F7FE /* TRUIControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRUIControl.h; sourceTree = "<group>"; };
+		854D54F31CDDCA3E0002F7FE /* TRUIControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRUIControl.m; sourceTree = "<group>"; };
+		854D54F51CDDCA4A0002F7FE /* TRUIControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRUIControl.xib; sourceTree = "<group>"; };
+		854D54F71CDDCDEE0002F7FE /* TRMenuData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRMenuData.h; sourceTree = "<group>"; };
+		854D54F81CDDCDEE0002F7FE /* TRMenuData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRMenuData.m; sourceTree = "<group>"; };
+		854D54FD1CDDD3420002F7FE /* TRHoneHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRHoneHeadView.h; sourceTree = "<group>"; };
+		854D54FE1CDDD3420002F7FE /* TRHoneHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRHoneHeadView.m; sourceTree = "<group>"; };
+		85594FDC1CDD755600B75EFF /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		85594FDD1CDD755600B75EFF /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		85594FDE1CDD777C00B75EFF /* FDSGroupTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSGroupTableViewController.h; sourceTree = "<group>"; };
+		85594FDF1CDD777C00B75EFF /* FDSGroupTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSGroupTableViewController.m; sourceTree = "<group>"; };
+		85594FE11CDD77BC00B75EFF /* FDSDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSDataManager.h; sourceTree = "<group>"; };
+		85594FE21CDD77BC00B75EFF /* FDSDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSDataManager.m; sourceTree = "<group>"; };
+		85594FE41CDD77D100B75EFF /* FDSCity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSCity.h; sourceTree = "<group>"; };
+		85594FE51CDD77D100B75EFF /* FDSCity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSCity.m; sourceTree = "<group>"; };
+		85594FE71CDD80A900B75EFF /* TRMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRMapViewController.h; sourceTree = "<group>"; };
+		85594FE81CDD80A900B75EFF /* TRMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRMapViewController.m; sourceTree = "<group>"; };
 		856992091CDAD97B006BF901 /* TRCity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRCity.h; sourceTree = "<group>"; };
 		8569920A1CDAD97B006BF901 /* TRCity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRCity.m; sourceTree = "<group>"; };
 		8569920C1CDADA3F006BF901 /* TRRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRegion.h; sourceTree = "<group>"; };
@@ -445,6 +476,8 @@
 			children = (
 				851B65141CD8A23E00DA40BA /* TRHomeViewController.h */,
 				851B65151CD8A23E00DA40BA /* TRHomeViewController.m */,
+				85594FDE1CDD777C00B75EFF /* FDSGroupTableViewController.h */,
+				85594FDF1CDD777C00B75EFF /* FDSGroupTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -452,6 +485,12 @@
 		851B64D71CD87E4000DA40BA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				854D54E71CDD940A0002F7FE /* TRBusiness.h */,
+				854D54E81CDD940A0002F7FE /* TRBusiness.m */,
+				854D54ED1CDD968C0002F7FE /* TRAnnotation.h */,
+				854D54EE1CDD968C0002F7FE /* TRAnnotation.m */,
+				854D54F71CDDCDEE0002F7FE /* TRMenuData.h */,
+				854D54F81CDDCDEE0002F7FE /* TRMenuData.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -459,6 +498,13 @@
 		851B64D81CD87E4000DA40BA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				85594FE71CDD80A900B75EFF /* TRMapViewController.h */,
+				85594FE81CDD80A900B75EFF /* TRMapViewController.m */,
+				854D54F21CDDCA3E0002F7FE /* TRUIControl.h */,
+				854D54F31CDDCA3E0002F7FE /* TRUIControl.m */,
+				854D54F51CDDCA4A0002F7FE /* TRUIControl.xib */,
+				854D54FD1CDDD3420002F7FE /* TRHoneHeadView.h */,
+				854D54FE1CDDD3420002F7FE /* TRHoneHeadView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -552,6 +598,8 @@
 			children = (
 				851B65021CD8986800DA40BA /* TRDeal.h */,
 				851B65031CD8986800DA40BA /* TRDeal.m */,
+				85594FE41CDD77D100B75EFF /* FDSCity.h */,
+				85594FE51CDD77D100B75EFF /* FDSCity.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -573,6 +621,8 @@
 				8549732C1CD98D9D00049669 /* TRMainTableViewCell.xib */,
 				8549732E1CD98DEA00049669 /* TRMainTableViewCell.h */,
 				8549732F1CD98DEA00049669 /* TRMainTableViewCell.m */,
+				85594FE11CDD77BC00B75EFF /* FDSDataManager.h */,
+				85594FE21CDD77BC00B75EFF /* FDSDataManager.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -821,6 +871,8 @@
 		854973FF1CD9E5C600049669 /* PList */ = {
 			isa = PBXGroup;
 			children = (
+				85594FDC1CDD755600B75EFF /* Constant.h */,
+				85594FDD1CDD755600B75EFF /* PrefixHeader.pch */,
 				854974001CD9E5C600049669 /* categories.plist */,
 				854974011CD9E5C600049669 /* cities.plist */,
 				854974021CD9E5C600049669 /* city.plist */,
@@ -901,6 +953,7 @@
 				854974151CD9E5C600049669 /* sorts.plist in Resources */,
 				851B65011CD8927E00DA40BA /* Main.storyboard in Resources */,
 				851B64CA1CD877C200DA40BA /* LaunchScreen.storyboard in Resources */,
+				854D54F61CDDCA4A0002F7FE /* TRUIControl.xib in Resources */,
 				854973D01CD9A1D600049669 /* Lato-Light.ttf in Resources */,
 				854974101CD9E5C600049669 /* cityGroups.plist in Resources */,
 				8549732D1CD98D9D00049669 /* TRMainTableViewCell.xib in Resources */,
@@ -938,6 +991,8 @@
 				854973C41CD9A1D600049669 /* UIPopoverController+FlatUI.m in Sources */,
 				8549732B1CD97A2600049669 /* TRMeViewController.m in Sources */,
 				854973FD1CD9D86300049669 /* UIView+Extension.m in Sources */,
+				85594FE31CDD77BC00B75EFF /* FDSDataManager.m in Sources */,
+				85594FE61CDD77D100B75EFF /* FDSCity.m in Sources */,
 				854973F11CD9A1D600049669 /* UIImage+MultiFormat.m in Sources */,
 				854973BB1CD9A1D600049669 /* FUISegmentedControl.m in Sources */,
 				854973D21CD9A1D600049669 /* MBProgressHUD.m in Sources */,
@@ -950,6 +1005,7 @@
 				854973BC1CD9A1D600049669 /* FUISwitch.m in Sources */,
 				854973F01CD9A1D600049669 /* UIImage+GIF.m in Sources */,
 				854973DF1CD9A1D600049669 /* MJRefreshNormalHeader.m in Sources */,
+				854D54E91CDD940A0002F7FE /* TRBusiness.m in Sources */,
 				854973B71CD9A1D600049669 /* FUIAlertView.m in Sources */,
 				854973EE1CD9A1D600049669 /* SDWebImagePrefetcher.m in Sources */,
 				851B65101CD89F5400DA40BA /* TRBaseTableViewController.m in Sources */,
@@ -965,7 +1021,10 @@
 				854973E41CD9A1D600049669 /* UIScrollView+MJRefresh.m in Sources */,
 				854973F41CD9A1D600049669 /* UIImageView+WebCache.m in Sources */,
 				851B64BF1CD877C200DA40BA /* AppDelegate.m in Sources */,
+				85594FE91CDD80A900B75EFF /* TRMapViewController.m in Sources */,
+				854D54EF1CDD968C0002F7FE /* TRAnnotation.m in Sources */,
 				851B65041CD8986800DA40BA /* TRDeal.m in Sources */,
+				854D54FF1CDDD3420002F7FE /* TRHoneHeadView.m in Sources */,
 				854973EB1CD9A1D600049669 /* SDWebImageDownloader.m in Sources */,
 				854973F81CD9D25900049669 /* TRBusinessHeadView.m in Sources */,
 				854973DC1CD9A1D600049669 /* MJRefreshBackNormalFooter.m in Sources */,
@@ -981,15 +1040,18 @@
 				851B65071CD89B3C00DA40BA /* TRMataDataTool.m in Sources */,
 				854973E21CD9A1D600049669 /* MJRefreshConst.m in Sources */,
 				854973C01CD9A1D600049669 /* UIColor+FlatUI.m in Sources */,
+				854D54F41CDDCA3E0002F7FE /* TRUIControl.m in Sources */,
 				851B65131CD89F6F00DA40BA /* TRDetailViewController.m in Sources */,
 				854973E91CD9A1D600049669 /* SDWebImageCompat.m in Sources */,
 				854974181CD9E6CE00049669 /* TRSort.m in Sources */,
 				851B64BC1CD877C200DA40BA /* main.m in Sources */,
 				854973B91CD9A1D600049669 /* FUICellBackgroundView.m in Sources */,
+				854D54F91CDDCDEE0002F7FE /* TRMenuData.m in Sources */,
 				854973DA1CD9A1D600049669 /* MJRefreshAutoStateFooter.m in Sources */,
 				854973C51CD9A1D600049669 /* UIProgressView+FlatUI.m in Sources */,
 				8577138E1CDB39A000E52931 /* TRSearchViewController.m in Sources */,
 				854973C71CD9A1D600049669 /* UIStepper+FlatUI.m in Sources */,
+				85594FE01CDD777C00B75EFF /* FDSGroupTableViewController.m in Sources */,
 				854973EA1CD9A1D600049669 /* SDWebImageDecoder.m in Sources */,
 				854973F51CD9A1D600049669 /* UIView+WebCacheOperation.m in Sources */,
 				854973C81CD9A1D600049669 /* UITabBar+FlatUI.m in Sources */,

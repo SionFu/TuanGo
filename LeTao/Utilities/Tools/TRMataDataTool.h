@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "TRDeal.h"
+#import "TRBusiness.h"
+#import "TRDeal.h"
+#import "TRCategory.h"
 @interface TRMataDataTool : NSObject
 /**
  *  给定服务器返回result数据(字典),返回所有订单模型对象数组成的数组(TRDeal)
@@ -41,4 +44,18 @@
  * 返回城市的名字get获取
  */
 + (NSString *)getSelectedCityName;
+
+/**
+ * 给定某个订单对象,返回 所有是商所有商家数组 (TRBusiness)
+ */
++ (NSArray *)getAllBusiness: (TRDeal *)deal;
+/**
+ *  给定订单返回所属了分类
+ */
++ (TRCategory *)getCategoryWIthDeal:(TRDeal *)deal;
+
+/**
+ * 返回菜单的内容
+ */
++ (NSArray *)getAllMenuData;
 @end

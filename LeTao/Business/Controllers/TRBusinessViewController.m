@@ -115,7 +115,7 @@
         self.mainRegionName = nil;
         
     }else{
-        if ([subRegin isEqualToString:@"全部"]) {
+        if (subRegin == nil) {
             self.subRegionName = region.name;
         }else{
             self.subRegionName = subRegin;
@@ -228,7 +228,7 @@
     //设置界面上的 区域 分类 城市  排序
 #warning TOOO:设置四个参数
     //可以获取到城市的名字(定位 +  用户自定义选择)
-    //区域
+    //城市
     if ([TRMataDataTool getSelectedCityName]) {
         params[@"city"] = [TRMataDataTool getSelectedCityName];
     }else{
@@ -247,7 +247,7 @@
     
     
     
-    //设置城市
+    //设置区域
     if (self.mainRegionName) {
         if (self.subRegionName) {
             //有子区域

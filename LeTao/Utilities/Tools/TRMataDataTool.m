@@ -12,6 +12,7 @@
 #import "TRCity.h"
 #import "TRRegion.h"
 #import "TRCategory.h"
+#import "TRMenuData.h"
 @implementation TRMataDataTool
 +(NSArray *)parseDealsResult:(id)result{
     //1.获取deals对应的数组(NSDictionary..)
@@ -50,7 +51,16 @@ static NSArray *categoryArray = nil;
     }return categoryArray;
 }
 
++(NSArray *)getAllBusiness:(TRDeal *)deal{
+    return [TRMataDataTool getModelArrayWithClass:[TRBusiness class] withArray:deal.businesses];
+}
 
+static NSArray *menuData = nil;
++(NSArray *)getAllMenuData{
+    if (!menuData) {
+        menuData = [[self alloc]getAndPressWithplist:@"menuData.plist" withClass:[TRMenuData class]];
+    }return menuData;
+}
 
 +(NSArray *)getAllRegionsCityName:(NSString *)cityName{
     NSArray *alltictyArray = [self getAllCity];
@@ -106,7 +116,27 @@ static NSString *_cityName = nil;
     return _cityName;
 }
 
-
++ (TRCategory *)getCategoryWIthDeal:(TRDeal *)deal{
+    //获取该订单的所属分类 "简餐快餐" "小吃" "小吃快餐" "东北菜"
+    NSArray *categoryArrayFromServer = deal.categories;
+    //获取所有分类的数组
+    NSArray *categoryArrayFromPlist = [self getAllCategory];
+    for (NSString *categoryStr in categoryArrayFromServer) {
+        for (TRCategory *category in categoryArrayFromPlist) {
+            
+            //看主分类的名字是否相等("美食"
+            if ([categoryStr isEqualToString:category.name]) {
+                return category;
+            }
+            //看子分类的名字是否相等("越南菜"
+            if ([category.subcategories containsObject:categoryStr]) {
+                return category;
+            }
+        }
+    }
+    //找不到所属分类
+    return nil;
+}
 
 
 

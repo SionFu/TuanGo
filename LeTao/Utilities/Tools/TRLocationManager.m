@@ -99,6 +99,7 @@
                 NSString *cityName = placemark.addressDictionary[@"City"];
                 //在城市后面去掉市
                 cityName = [cityName substringToIndex:cityName.length-1];
+                NSLog(@"%@",cityName);
                 //执行block
                 cityBlock(cityName);
             }

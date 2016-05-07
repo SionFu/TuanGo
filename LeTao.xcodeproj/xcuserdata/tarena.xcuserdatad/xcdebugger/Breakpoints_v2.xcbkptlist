@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LeTao/Business/Controllers/TRBusinessViewController.m"
-            timestampString = "484231247.425759"
+            filePath = "LeTao/Utilities/Tools/TRLocationManager.m"
+            timestampString = "484288501.734838"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "251"
-            endingLineNumber = "251"
-            landmarkName = "-settingRequestparams:"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "-getUserCityName:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,12 +25,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LeTao/Business/Controllers/TRBusinessViewController.m"
-            timestampString = "484229774.826885"
+            filePath = "LeTao/Home/Controller/TRHomeViewController.m"
+            timestampString = "484302927.079491"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "257"
-            endingLineNumber = "257"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
             landmarkName = "-settingRequestparams:"
             landmarkType = "5">
          </BreakpointContent>
